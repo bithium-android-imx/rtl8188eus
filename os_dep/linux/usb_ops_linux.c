@@ -779,7 +779,7 @@ void usb_read_port_complete(struct urb *purb, struct pt_regs *regs)
 	}
 
 exit:
-
+  return;
 }
 
 u32 usb_read_port(struct intf_hdl *pintfhdl, u32 addr, u32 cnt, u8 *rmem)
