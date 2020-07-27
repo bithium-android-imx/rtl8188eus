@@ -56,7 +56,7 @@ endif
 
 # Set the output for the kernel build products.
 MODULE_SRC := $(LOCAL_PATH)
-MODULE_OUT := $(realpath $(KERNEL_OUT))
+MODULE_OUT = $(realpath $(KERNEL_OUT))
 
 RTL8188EUS_MODULE_CFLAGS += -mno-android
 RTL8188EUS_MODULE_CFLAGS += -DCONFIG_PLATFORM_ANDROID
